@@ -47,6 +47,49 @@ todosList.prototype = Object.create({}, {
         get: () => {
             return element(by.className("edit"));
         }
+    },
+
+    removeTodoBtns: {
+        get: () => {
+            return element.all(by.className("destroy"));
+        }
+    },
+
+    activeTab: {
+        get: () => {
+            return element(by.xpath("//a[@href='#/active']"));
+        }
+    },
+
+    allTab: {
+        get: () => {
+            return element(by.xpath("//a[@href='#/']"));
+        }
+    },
+
+    completedTab: {
+        get: () => {
+            return element(by.xpath("//a[@href='#/completed']"));
+        }
+    },
+
+    toggleAll: {
+        get: () => {
+            // return element(by.id("toggle-all"));
+            return element(by.xpath("//label[@for='toggle-all']"));
+        }
+    },
+
+    clearCompletedBtn: {
+        get: () => {
+            return element(by.className("clear-completed"));
+        }
+    },
+
+    pendingItemsCount: {
+        get: () => {
+            return element(by.xpath("//*[@class='todo-count']/strong"));
+        }
     }
 });
 
