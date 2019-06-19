@@ -57,5 +57,13 @@ describe('Sanity testing for todos list', () => {
 
   });
 
+  // remove an item from to-do list
+
+  // swithc views between ALL, ACTIVE and COMPLETED
+
+  // test bulk operations
+
+  // check for pending items count in the item counter
+
 
 });
